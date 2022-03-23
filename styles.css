@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(204, 43%, 93%);
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  margin: auto;
+  margin-top: 10rem;
+
+  width: 670px;
+  height: auto;
+
+  background: white;
+
+  border-radius: 10px;
+}
+header {
+  height: 40%;
+
+  padding: 2.5rem;
+
+  color: hsl(218, 22%, 67%);
+}
+.main-heading {
+  margin-bottom: 1rem;
+
+  color: hsl(179, 62%, 43%);
+
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+header h2 {
+  color: hsl(71, 73%, 54%);
+
+  font-weight: 700;
+  font-size: 1.15rem;
+
+  margin-bottom: 0.5rem;
+}
+
+.heading-text {
+  line-height: 1.5rem;
+}
+
+.info {
+  display: flex;
+
+  height: 60%;
+
+  background: hsl(179, 62%, 43%);
+  color: hsl(204, 43%, 93%);
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 50%;
+  padding: 2.5rem;
+}
+
+.price h2 {
+  margin-bottom: 1.2rem;
+
+  font-size: 1.2rem;
+}
+
+.price-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  color: hsla(203, 44%, 93%, 0.597);
+
+  margin-bottom: 0.75rem;
+}
+
+span {
+  font-size: 2rem;
+  font-weight: 700;
+
+  color: hsl(204, 43%, 93%);
+}
+
+button {
+  width: 15.5rem;
+  height: 3.5rem;
+
+  margin-top: 2rem;
+
+  color: inherit;
+  background: hsl(71, 73%, 54%);
+
+  font-weight: 700;
+  font-size: 1rem;
+
+  border: none;
+  border-radius: 7px;
+
+  box-shadow: 5px 5px 15px rgb(19, 143, 143);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+  padding-top: 2.5rem;
+  padding-left: 2.5rem;
+
+  background-color: hsl(179, 57%, 51%);
+
+  border-bottom-right-radius: 12px;
+}
+
+.about h2 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.about p {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  padding-right: 5rem;
+
+  font-size: 15px;
+  line-height: 1.5rem;
+
+}
+
+/* responsive */
+
+@media (max-width: 600px) {
+  .card {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 85vw;
+    height: auto;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  header {
+    height: auto;
+    padding: 2rem;
+    padding-right: 1rem;
+  }
+  .main-heading {
+    margin-bottom: 1.5rem;
+  }
+  .heading-text {
+    margin-top: 1.25rem;
+    font-size: 15px;
+  }
+  section {
+    flex-direction: column;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .price {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.1rem;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .about {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1rem;
+    border-bottom-left-radius: 8px;
+  }
+}
